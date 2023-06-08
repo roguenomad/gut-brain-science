@@ -1,6 +1,75 @@
 body, html {
     height: 100%;
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    padding: 0;
 }
+
+/***** Nav Bar *****/
+#wrapper {
+    /* max-width: 940px; */
+    margin: 0 auto;
+    padding: 0;
+    clear: both;
+}
+
+#logo {
+    display: inline-block;
+    width: 150px;
+    height: 150px;
+    margin: 0;
+    padding: 0;
+    float: left;
+    position: relative;
+    transform: translate(25%, 50%);
+    z-index: 1;
+} 
+
+.nav-links {
+    display: inline-block;
+    list-style-type: none;
+    position: relative;
+    margin: 0 auto;
+    /* transform: translate(50%, 0%); */
+    /* margin-top: 50px;
+    margin-bottom: 15px; */
+    padding: 0;
+  }
+
+li {
+    display: inline;
+    padding: 15px;
+    }
+
+li a {
+    text-decoration: none;
+    }
+
+.hover-underline-animation {
+        display: inline-block;
+        position: relative;
+        color: #999999;
+      }
+      
+.hover-underline-animation::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #0546E0;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+    }
+      
+.hover-underline-animation:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+    }
+
+
 
 /***** Hero  *****/
 .hero-image {
@@ -17,7 +86,7 @@ body, html {
   position: absolute;
   top: 90%;
   left: 50%;
-  font-size: 3vw;
+  font-size: 2.5vw;
   white-space: nowrap;
   transform: translate(-50%, -50%);
   color: white;
@@ -29,4 +98,14 @@ body, html {
 
 .main-text-sub {
     text-decoration: underline;
+}
+
+/**** Section One ****/
+
+#info-1 {
+    height: 714px;
+    color: #364F99;
+    text-align: center;
+    background-color: #DDFDEE;
+    padding: 0 1%;
 }
