@@ -120,12 +120,12 @@ li a {
 }
 
 .info-text {
-    padding: 15% 0%;
+    padding: 5% 0%;
 }
 
 .info-text-title {
     font-family: 'Baloo Paaji 2', cursive;
-    font-size: 3vw;
+    font-size: 4.5vw;
     font-weight: bold;
     text-shadow: 0px 4px 4px rgba(0,0,0,25%);
 
@@ -138,13 +138,22 @@ li a {
 }
 
 .info-text-button {
-    background-color: #4CAF50; /* Green */
-    border: none;
+    background-color: #0546E0;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.25);    border: none;
     color: white;
-    padding: 15px 32px;
+    padding: 10px 75px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
     border-radius: 10px;
+    transition: all 0.3s ease 0s;
+  cursor: pointer;
 }
+
+.info-text-button:hover {
+    background-color: #2EE59D;
+    box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+    color: #fff;
+    transform: translateY(-7px);
+  }
