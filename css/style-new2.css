@@ -1,10 +1,16 @@
 body, html {
     height: 100%;
     font-family: 'Raleway', sans-serif;
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 /***** Nav Bar *****/
 #wrapper {
     /* max-width: 940px; */
@@ -74,7 +80,7 @@ li a {
 
 /***** Hero  *****/
 .hero-image {
-  background-image: url("./images/brain-gut.jpeg");
+  background-image: url("/Users/noels/Desktop/gut-brain-science-foundation/site/images/brain-gut.jpeg");
   height: 100%;
   background-position: center;
   background-repeat: no-repeat;
@@ -156,69 +162,114 @@ li a {
   }
 
 /***** Cards *****/
-
-.card-container {
-    height: 550px;
+/* .container {
+    box-sizing: border-box;
     max-width: 1120px;
     width: 100%;
-    background-color: #162D4F;
-    color: white;
-    padding: 0;
-    margin: 0;
-}
-
-.slider-titles {
-    text-align: center;
-    padding: 10%;
-
-}
-.slider-main-title {
-    font-family: 'Baloo Paaji 2', cursive;
-    font-size: 36px;
-}
-
-.slider-sub-title {
-    padding: 2%;
-    font-style: italic;
-    font-weight: lighter;
-    opacity: 50%;
-}
-
-.card-wrapper {
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: #162D4F;
 }
 
+.card-wrapper .swiper-wrapper {
+
+
+}
 .card {
-    
+    width: 312px;
+    background-color: #2EE59D;
+}
+.card .image-box {
+    height: 200px;
+    width: 200px;
+    background-color: #FBAF0D;
+    border-radius: 50%;
 }
 
-.card .image-circle img {
-    width: 150px;
-    height: 150px;
+.card .image-box img {
     border-radius: 50%;
-    background-color: #FBAF0D;
-
+    height: 150px;
 }
 
 .card .profile-details {
-    width: 255px;
-    height: 55px;
+    background-color: #FBAF0D;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    column-gap: 12px;
+    padding: 15px;
+    color: white;
+}
+
+.card .profile-details img {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+}
+
+.profile-details .name {
+    font-weight: 700;
+}
+
+.profile-details .credentials {
+    font-weight: 300;
+} */
+
+#slider {
+    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    column-gap: 15px;
-    margin-top: 20px;
-    background-color: #FBAF0D;
-    border-radius: 10px;
+    background: #162D4F;
 }
 
-.name-cred {
-    text-align: center;
+section .card .image {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    padding: 3px;
+    background: #FBAF0D;
 }
-.card .icon {
-    width: 25px;
-    height: 25px;
-    display: inline-block;
+
+section .card .image img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #fff;
+}
+
+.card {
+    position: relative;
+    border-radius: 20px;
+    background: #fff;
+}
+
+.card .card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    position: relative;
+}
+
+.card .media-icons {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+.card .media-icons i:hover {}
+
+.card .name-cred {
+    padding: 15px;
+    border-radius: 10px;
+    background-color: #FBAF0D;
+    color: white;
+
 }
