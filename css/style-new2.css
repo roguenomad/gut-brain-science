@@ -79,7 +79,7 @@ li a {
 
 /***** Hero  *****/
 .hero-image {
-  background-image: url("/Users/noels/Desktop/gut-brain-science-foundation/site/images/brain-gut.jpeg");
+  background-image: url("../images/brain-gut.jpeg");
   height: 100%;
   background-position: center;
   background-repeat: no-repeat;
@@ -253,6 +253,54 @@ li a {
     font-weight: 500;
 }
 
+/****** Subscribe *****/
+
+.sub {
+    width: 614px;
+    height: 614px;
+    margin: 100px;
+    background-color: #0546E0;
+    opacity: 0.5;
+    color: #fff;
+}
+
+.sub-content {
+    /* padding: 100px; */
+}
+
+.sub-head {
+    font-size: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 25px;
+}
+
+.join {
+    font-family: 'Baloo Paaji 2', cursive;
+    font-size: 48px;
+}
+
+.twitter {
+    width: 614px;
+    height: 614px;
+    margin: 100px;
+    background-color: #0546E0;
+    opacity: 0.5;
+    color: #fff;
+}
+
+.calendar {
+    background-image: url("../images/AdobeStock_489157253.jpeg");
+    height: 900px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.calendar-titles {
+    color: white;
+}
 
 /*
 .slider-wrap {
