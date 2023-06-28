@@ -11,6 +11,13 @@ body, html {
     margin: 0;
     padding: 0;
 }
+
+/***** Fonts *****/
+
+.font-1 {
+    font-family: 'Baloo Paaji 2', cursive;
+}
+
 /***** Nav Bar *****/
 #wrapper {
     margin: 0 auto;
@@ -98,10 +105,6 @@ li a {
   color: white;
 }
 
-.main-text-title {
-    font-family: 'Baloo Paaji 2', cursive;
-}
-
 .main-text-sub {
     font-size: 4vw;
     text-decoration: underline;
@@ -126,7 +129,6 @@ li a {
 }
 
 .info-text-title {
-    font-family: 'Baloo Paaji 2', cursive;
     font-size: 4.5vw;
     font-weight: bold;
     text-shadow: 0px 4px 4px rgba(0,0,0,25%);
@@ -173,7 +175,6 @@ li a {
 
 .slider-title {
     padding: 10vh;
-    font-family: 'Baloo Paaji 2', cursive;
     text-align: center;
     color: #fff;
     font-size: 36px;
@@ -187,9 +188,11 @@ li a {
 }
 
 .slider-wrapper {
+    /* transform: translate(5%, 5%); */
    display: flex;
    align-items: center;
    justify-content: center;
+   max-width: 775px;
 }
 
 .slider-wrapper i {
@@ -207,7 +210,13 @@ li a {
     grid-auto-flow: column;
     grid-auto-columns: calc((100% / 3) -12px);
     gap: 16px;
-    overflow: hidden;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+}
+
+.carousel .dragging {
+    scroll-behavior: auto;
 }
 
 .carousel .dragging .card {
@@ -258,6 +267,132 @@ li a {
     font-weight: 500;
 }
 
+
+/****** Subscribe *****/
+
+
+.comm-container {
+    width: 614px;
+    min-height: 614px;
+    max-width: 614px;
+    margin: 100px;
+    background-color: #778fef;
+    color: #fff;
+    border-radius: 10px;
+}
+
+.subscribe {
+    
+
+}
+
+.sub-head {
+    font-size: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 25px;
+}
+
+.sub-form input {
+    color: #666666;
+    background-color: #F1F1F1;
+    border: none;
+    border-radius: 25px;
+}
+
+.sub-form input[type=text], input[type=email] {
+    height: 60px;
+    width: 400px;
+    font-size: 20px;
+}
+
+.sub-form input[type=submit] {
+    width: 175px;
+    height: 60px;
+    background-color: #fff;
+    color: #0546E0;
+}
+
+.join {
+    font-size: 48px;
+}
+
+
+
+
+.speaker {
+    font-size: 32px;
+}
+
+.twitter-timeline {
+    width: 600px;
+    height: 480px;
+    overflow: hidden;
+}
+
+.cal-box {
+    height: 700px;
+    width: auto;
+    background-color: #020C16;
+}
+
+.calendar {
+    background-image: url("../images/AdobeStock_489157253.jpeg");
+    height: 900px;
+    width: auto;
+    /* height: 1900px;
+    width: auto;
+    max-width: 1000px; */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+
+
+.calendar-text {
+    color: white;
+    text-align: center;
+    padding: 100px;
+}
+
+.cal-title {
+    font-size: 60px;
+}
+
+.cal-sub-title {
+    font-size: 30px;
+    opacity: .75;
+}
+
+/***** Footer *****/
+
+.footer {
+    height: 606px;
+    background-color: #000;
+}
+
+.footer-title-box {
+    display: block;
+    text-align: center;
+}
+
+.footer-title {
+    font-size: 40px;
+    color: #fff;
+}
+
+.footer-subtitle {
+    font-size: 24px;
+    color: #999999;
+}
+
+.copyright {
+    height: 100px;
+    background-color: #333333;
+}
+
 /***** Media Query *****/
 
 @media screen and (max-width: 900px) {
@@ -272,62 +407,8 @@ li a {
     }
 }
 
-/****** Subscribe *****/
-
-.community {
-    display: flex;
-}
-
-.sub {
-    min-width: 614px;
-    height: auto;
-    margin: 100px;
-    background-color: #0546E0;
-    opacity: 0.5;
-    color: #fff;
-}
-
-.sub-content {
-    /* padding: 100px; */
-}
-
-.sub-head {
-    font-size: 20px;
-    text-transform: uppercase;
-    text-align: center;
-    padding: 25px;
-}
-
-.join {
-    font-family: 'Baloo Paaji 2', cursive;
-    font-size: 48px;
-}
-
-.twitter {
-    width: 614px;
-    height: 614px;
-    margin: 100px;
-    background-color: #0546E0;
-    opacity: 0.5;
-    color: #fff;
-}
-
-.calendar {
-    background-image: url("../images/AdobeStock_489157253.jpeg");
-    height: 900px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-}
-
-.calendar-titles {
-    color: white;
-}
-
-/***** Footer *****/
-
-.footer {
-    height: 706px;
-    background-color: #333333;
+@media screen and (min-width: 1000px) {
+    .community {
+        display: flex;
+    }
 }
