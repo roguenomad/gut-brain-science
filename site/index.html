@@ -18,10 +18,10 @@
 </head>
 <body id="wrapper">
     <nav id="nav">
-        <img id="logo" src="/Users/noels/Desktop/gut-brain-science-foundation/site/logo-holder.png" alt="">
+        <img id="logo" src="./images/logo-holder.png" alt="">
         <ul class='nav-links'>
-            <li><a class="hover-underline-animation" href="http://gutbrainscience.org/">Home</a></li>
-            <li><a class="hover-underline-animation" href="">Aim & Mission</a></li>
+            <li><a class="hover-underline-animation" href="./index.html">Home</a></li>
+            <li><a class="hover-underline-animation" href="./aim_mission.html">Aim & Mission</a></li>
             <li><a class="hover-underline-animation" href="">About</a></li>
             <li><a class="hover-underline-animation" href="">Contact</a></li>
             <li><a class="hover-underline-animation" href="">Join</a></li>
@@ -127,11 +127,10 @@
             <form action="" class="sub-form">
                 <input type="text" id="fname" name="fname" value="your name"><br>
                 <input type="email" id="email" name="email" value="your email"><br>
-                
-<div id="captcha" class="captcha"><script>createCaptcha();</script></div>
-<div class="restart">
-  <a href="#" onclick="createCaptcha()">Change</a>
-</div>
+                <div id="captcha" class="captcha"><script>createCaptcha();</script></div>
+                <div class="restart">
+                <a href="#" onclick="createCaptcha()">Change</a>
+                </div>
                 <div class="input">
                     <input type="text" name="reCaptcha" id="reCaptcha" placeholder="Type The Captcha"/>
                 </div>
@@ -158,6 +157,7 @@
                 <h2 class="font-1 cal-title">Symposia & Meetings</h2>
                 <h3 class="cal-sub-title">When You Can Meet Us</h3>
             </div>
+            <button class="calendar-button">Register for Future Meetings</button>
         </div>
         <div class="calendar">
         </div>
@@ -175,17 +175,42 @@
         </div>
     </section>
     <footer class="footer">
-        <div class="footer-title-box">
-        <div>
-            <h3 class="footer-title font-1">Sitemap</h3>
-            <h2 class="footer-subtitle">All Our Pages</h2>
-        </div>
-            <h3 class="footer-title font-1">Contact Us</h3>
-                <h2 class="footer-subtitle">Send Us a Message</h2>
+        <div class="row">
+            <div class="column">
+                <img id="logo" src="./images/logo-holder.png" alt="">
+                <ul class="footer-info">
+                    <li class="footer-li"><img src="./images/icons8-phone-50.png" alt="" class="footer-icon">7751234567</li>
+                    <li class="footer-li"><img src="./images/icons8-email-48.png" alt="" class="footer-icon">email@emailaddress.com</li>
+                    <li class="footer-li"><img src="./images/icons8-twitter-50.png" alt="" class="footer-icon"> @GutBrainScience</li>
+                </ul>
             </div>
+            <div class="footer-title-box column">
+                <h3 class="footer-title font-1">Sitemap</h3>
+                <h2 class="footer-subtitle">All Our Pages</h2>
+                
+                
+            </div>
+            <div class="footer-title-box column">
+                <h3 class="footer-title font-1">Contact Us</h3>
+                <h2 class="footer-subtitle">Send Us a Message</h2>
+                <form action="" class="footer-form">
+                    <input type="text" id="fname" name="fname" value="your name"><br>
+                    <input type="email" id="email" name="email" value="your email"><br>
+                    <div id="captcha" class="captcha"><script>createCaptcha();</script></div>
+                    <div class="restart">
+                    <a href="#" onclick="createCaptcha()">Change</a>
+                    </div>
+                    <div class="input">
+                        <input type="text" name="reCaptcha" id="reCaptcha" placeholder="Type The Captcha"/>
+                    </div>
+                    <div id="errCaptcha" class="errmsg"></div>
+                    <input type="submit" value="Submit" onclick="validateCaptcha()">
+                </form>
+            </div>   
+        </div>
     </footer>
     <div class="copyright">
-            
+            <h4 class="copyright-text">Copyright 2023. All Rights Reserved. Nohely’s Web Consulting</h4>
     </div>
 </body>
 </html>

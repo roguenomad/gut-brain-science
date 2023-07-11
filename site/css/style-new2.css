@@ -26,6 +26,8 @@ body, html {
 }
 
 #nav {
+    /* display: grid;
+    justify-content: center; */
     padding: 2.75%;
 }
 
@@ -165,12 +167,13 @@ li a {
 /***** Slider *****/
 
 #slider-container {
+    display: grid;
+    align-self: center;
     height: 70vh;
     /* max-width: 1100px; */
     width: 100%;
-    align-items: center;
-    justify-content: center;
     background: #162D4F;
+
 }
 
 .slider-title {
@@ -188,16 +191,14 @@ li a {
 }
 
 .slider-wrapper {
-    /* transform: translate(5%, 5%); */
    display: flex;
    align-items: center;
    justify-content: center;
+   margin-left: 10%; /*find something new here*/
    max-width: 775px;
 }
 
 .slider-wrapper i {
-    /* height: 150px;
-    width: 150px; */
     text-align: center;
     line-height: 50px;
     border-radius: 50%;
@@ -275,14 +276,15 @@ li a {
     width: 614px;
     min-height: 614px;
     max-width: 614px;
+    display: grid;
+    justify-content: center;
     margin: 100px;
     background-color: #778fef;
-    color: #fff;
+    color: #fff;  
     border-radius: 10px;
 }
 
 .subscribe {
-    
 
 }
 
@@ -290,7 +292,6 @@ li a {
     font-size: 20px;
     text-transform: uppercase;
     text-align: center;
-    padding: 25px;
 }
 
 .sub-form input {
@@ -298,6 +299,8 @@ li a {
     background-color: #F1F1F1;
     border: none;
     border-radius: 25px;
+    padding-left: 15px;
+    margin: 10px;
 }
 
 .sub-form input[type=text], input[type=email] {
@@ -317,19 +320,29 @@ li a {
     font-size: 48px;
 }
 
-
+.captcha {
+    width: 100px;
+    height: 50px;
+    display: flex;
+    
+}
 
 
 .speaker {
     font-size: 32px;
+    display: flex;
+}
+
+.fa-solid .fa-arrow-right {
 }
 
 .twitter-timeline {
-    width: 600px;
+    width: 550px;
     height: 480px;
     overflow: hidden;
 }
 
+/***** Calendar *****/
 .cal-box {
     height: 700px;
     width: auto;
@@ -351,6 +364,7 @@ li a {
 
 
 
+
 .calendar-text {
     color: white;
     text-align: center;
@@ -366,6 +380,14 @@ li a {
     opacity: .75;
 }
 
+.calendar-button {
+    width: 402px;
+    height: 101px;
+    color: #fff;
+    background-color: #8AC5E7;
+    border-radius: 25px;
+}
+
 /***** Footer *****/
 
 .footer {
@@ -373,10 +395,22 @@ li a {
     background-color: #000;
 }
 
-.footer-title-box {
+.column {
+    float: left;
+    width: 33.33%;
+  }
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+/* .footer-title-box {
     display: block;
+    width: 614px;
     text-align: center;
-}
+} */
 
 .footer-title {
     font-size: 40px;
@@ -388,11 +422,80 @@ li a {
     color: #999999;
 }
 
+.footer-icon {
+    width: 25px;
+    margin: 5px;
+}
+
+.footer-info {
+    
+    color: #F1F1F1;
+}
+
+.footer-li {
+    display: block;
+    width: 150px;
+    font-size: 20px;
+}
+
+.footer-nav {
+    color: #F1F1F1;
+}
+#footer-nav-links {
+    color: #f1f1f1;
+    text-decoration: none;
+}
+
+.footer-form input {
+        color: #D9D9D9;
+        background-color: #F1F1F1;
+        border: none;
+        border-radius: 25px;
+        padding-left: 15px;
+        margin: 10px;
+    }
+    
+.footer-form input[type=text], input[type=email] {
+        height: 60px;
+        width: 400px;
+        font-size: 20px;
+    }
+    
+.footer-form input[type=submit] {
+        width: 175px;
+        height: 60px;
+        background-color: #DDFDEE;
+        color: #364F99;
+    }
+
 .copyright {
     height: 100px;
     background-color: #333333;
 }
 
+.copyright-text {
+    color: #f1f1f1;
+    opacity: 0.5;
+    text-align: center;
+    padding-top: 50px;
+}
+
+/***** Aim & Mission *****/
+
+.am-hero-image {
+    background-image: url("../images/AdobeStock_418522692.jpeg");
+    background-color: #000;
+    height: 800px;
+    width: 100%;
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: contain;
+    /* height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative; */
+  }
 /***** Media Query *****/
 
 @media screen and (max-width: 900px) {
@@ -412,3 +515,9 @@ li a {
         display: flex;
     }
 }
+/* 
+@media screen and (min-width: 450px) {
+    .twitter-timeline {
+        width: 550px;
+    }
+} */
