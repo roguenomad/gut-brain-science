@@ -26,15 +26,13 @@ body, html {
 }
 
 #nav {
-    /* display: grid;
-    justify-content: center; */
     padding: 2.75%;
 }
 
 #logo {
     display: inline-block;
-    width: 150px;
-    height: 150px;
+    height: auto;
+    width: 20%;
     margin: 0;
     padding: 0;
     float: left;
@@ -87,9 +85,14 @@ li a {
 
 
 /***** Hero  *****/
+.hero-container {
+    height: 600px;
+}
 .hero-image {
   background-image: url("../images/brain-gut.jpeg");
   height: 100%;
+  /* max-height: 80%; */
+  max-width: 100%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -351,14 +354,14 @@ li a {
 
 .calendar {
     background-image: url("../images/AdobeStock_489157253.jpeg");
-    height: 900px;
-    width: auto;
+    height: 1000px;
+    width: 100%;
     /* height: 1900px;
     width: auto;
     max-width: 1000px; */
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     position: relative;
 }
 
@@ -439,7 +442,9 @@ li a {
 }
 
 .footer-nav {
+    display: inline-block;
     color: #F1F1F1;
+    width: 100px;
 }
 #footer-nav-links {
     color: #f1f1f1;
@@ -457,7 +462,7 @@ li a {
     
 .footer-form input[type=text], input[type=email] {
         height: 60px;
-        width: 400px;
+        width: 90%;
         font-size: 20px;
     }
     
@@ -490,21 +495,47 @@ li a {
     background-position: right;
     background-repeat: no-repeat;
     background-size: contain;
-    /* height: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative; */
   }
+
+  .am-hero-text {
+    display: block;
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+    height: 380px;
+    width: 570px;
+    color: #fff;
+    font-size: 84px;
+  }
+
 /***** Media Query *****/
+@media (min-width: 992px){
+    .hero-container {
+        height: 700px;
+        /* height: 800px; */
+    }
+    .hero-image {
+        background-size: contain;
+        height: 100%;
+        width: 100%;
+    }
+    .nav-links {
+        left: 10%;
+    }
+}
+
 
 @media screen and (max-width: 900px) {
     .slider-wrapper .carousel {
         /* grid-auto-columns: calc((100% / 3) - 12px); */
     }
+    /* .hero-container {
+        height: 1000px;
+    } */
 }
 
 @media screen and (max-width: 600px) {
+    
     .slider-wrapper .carousel {
         grid-auto-columns: 50%;
     }
