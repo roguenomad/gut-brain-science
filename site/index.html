@@ -27,7 +27,7 @@
             <li><a class="hover-underline-animation" href="">Join</a></li>
         </ul>
     </nav> 
-    <div class="hero-container"> 
+    <div> 
         <div class="hero-image">
             <div class="hero-text">
                 <h1 class="main-text"><span class="main-text-title font-1">Gut-Brain Science: </span><span class="main-text-sub">A Key to Well-Being </span></h1>
@@ -134,7 +134,7 @@
                 <a href="#" onclick="createCaptcha()">Change</a>
                 </div>
                 <div class="input">
-                    <input type="text" name="reCaptcha" id="reCaptcha" placeholder="Type The Captcha"/>
+                    <input type="text" name="reCaptcha" id="reCaptcha" placeholder="type the captcha"/>
                 </div>
                 <div id="errCaptcha" class="errmsg"></div>
                 <input type="submit" value="Submit" onclick="validateCaptcha()">
@@ -177,7 +177,7 @@
         </div>
     </section>
     <footer class="footer">
-        <div class="column-footer-1">
+        <div class="column-footer column-footer-1">
             <img src="./images/logo-holder.png" alt="" id="logo">
             <ul class="footer-info">
                 <li class="footer-li"><img src="./images/icons8-phone-50.png" alt="" class="footer-icon">7751234567</li>
@@ -185,33 +185,34 @@
                 <li class="footer-li"><img src="./images/icons8-twitter-50.png" alt="" class="footer-icon"> @GutBrainScience</li>
             </ul>
         </div>
-        <div class="column-footer-2">
-            <h4 class="sitemap">Sitemap</h4>
+        <div class="column-footer column-footer-2">
+            <h4 class="sitemap title-footer">Sitemap</h4>
             <h5 class="sub-title-footer">All Our Pages</h5>
-            <a href="">Home</a>
-            <a href="">Aim & Mission</a>
-            <a href="">Seminars</a>
-            <a href="">About</a>
-            <a href="">Contact</a>
-            <a href="">Join</a>
-            
+            <div class="footer-nav">
+            <a href="" class="footer-nav-link">Home</a>
+            <a href="" class="footer-nav-link">Aim & Mission</a>
+            <a href="" class="footer-nav-link">Seminars</a>
+            <a href="" class="footer-nav-link">About</a>
+            <a href="" class="footer-nav-link">Contact</a>
+            <a href="" class="footer-nav-link">Join</a> 
+            </div>
         </div>
-        <div class="column-footer-3">
-            <h4 class="contact">Contact Us</h4>
+        <div class="column-footer column-footer-3">
+            <h4 class="contact title-footer">Contact Us</h4>
             <h5 class="sub-title-footer">Send Us a Message</h5>
             <form action="" class="footer-form">
                     <input type="text" id="fname" name="fname" value="your name"><br>
                     <input type="email" id="email" name="email" value="your email"><br>
                     <div id="captcha" class="captcha"><script>createCaptcha();</script></div>
                     <div class="restart">
-                    <a href="#" onclick="createCaptcha()">Change</a>
+                    <a href="#" onclick="createCaptcha()">change</a>
                     </div>
                     <div class="input">
                         <input type="text" name="reCaptcha" id="reCaptcha" placeholder="Captcha"/>
                     </div>
                     <div id="errCaptcha" class="errmsg"></div>
                     <input type="submit" value="Submit" onclick="validateCaptcha()">
-                </form>
+            </form>
         </div>
     </footer>
     <!-- <footer class="footer">
