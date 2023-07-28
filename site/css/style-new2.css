@@ -29,23 +29,26 @@ body, html {
     padding: 10px;
 }
 
-#logo {
+.logo {
     display: inline-block;
     height: auto;
-    width: 150px;
+    width: 100%;
+    max-width: 150px;
     margin: 0;
-    padding: 0;
-    float: left;
-    position: relative;
+    padding: 0px;
     transform: translate(20%, 10%);
     z-index: 1;
 } 
+.nav-logo {
+    position: absolute;
+}
 
-.nav-links {
-    display: inline-block;
+.nav-bar {
     list-style-type: none;
-    position: relative;
     padding: 20px;
+    margin: auto;
+    width: 50%;
+    white-space: nowrap;
   }
 
 li {
@@ -405,45 +408,36 @@ li a {
 /***** Footer *****/
 
 .footer {
-    /* display: flex;
-    align-items: center;
-    justify-content: flex-start; */
-    /* justify-content: space-between; */
-    height: 300px;
-    /* margin-top: 50px; */
+    height: 400px;
     width: auto;
     display: flex;
     align-items: center;
-    /* justify-content: space-around; */
-    /* padding: 25px 15%; */
     background-color: #000;
     color: #fff;
-    /* overflow: hidden; */
-    /* white-space: nowrap; */
 }
 .column-footer {
-    padding: 5%;
+    margin: auto;
+    width: 50%;
 }
 
+.footer-logo {
+    position: relative;
+}
 .column-footer-1 {
     display: flex;
     align-items: center;
-    /* white-space: nowrap; */
-    /* flex-grow: 2; */
 }
 
 .column-footer-2 {
-    /* position: relative; */
-    /* padding-top: 25px; */
-    /* align-items: center; */
+    padding: 5%;
+
 }
 
 .column-footer-3 {
+    padding-top: 5%;
+    max-height: 300px;
     margin: 0;
     padding: 0;
-    /* display: flex;
-    align-items: center;
-    justify-content: flex-start; */
 
 }
 
@@ -457,24 +451,13 @@ li a {
     white-space: nowrap;
 }
 
-.footer-logo {
-     /* margin: 20px; */
-}
-
-.sitemap {
-    
-}
-
 .footer-li {
     display: flex;
     align-items: center;
     white-space: nowrap;
-    /* width: 50px; */
     height: 45px;
     font-size: 10px;
-    /* transform: translate(5px, 20px); */
     margin-left: 20px;
-    /* margin: 50px 0px 0px 20px; */
 }
 
 .footer-nav {
@@ -486,6 +469,7 @@ li a {
 .footer-nav-link {
     text-decoration: none;
     color: #f1f1f1;
+    white-space: nowrap;
 }
 
 .footer-nav-link:hover {
@@ -507,116 +491,17 @@ li a {
 }
 
 .footer-form input[type=text], input[type=email] {
-    height: 60px;
-    width: 100%;
+    height: 100%;
+    width: 90%;
     font-size: 20px;
 }
 
 .footer-form input[type=submit] {
-    width: 175px;
-    height: 60px;
+    width: 90px;
+    height: 30px;
     background-color: #DDFDEE;
     color: #364F99;
 }
-
-
-/* 
-.footer {
-    position: relative;
-    height: 606px;
-    background-color: #000;
-}
-
-.column {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    /* float: left;
-    width: 33.33%; 
-
-  }
-  
-  .row:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-
-  .footer-title-box {
-    display: block;
-    margin-left: 33%;
-}
-
-.footer-title {
-    padding-top: 15%;
-    font-size: 40px;
-    color: #fff;
-}
-
-.footer-subtitle {
-    font-size: 24px;
-    color: #999999;
-}
-
-.logo-info {
-   /*  position: absolute;
-    bottom: 0; sends to bottom of container
-    display: flex;
-    position: absolute;
-    bottom: 50px;
-}
-
-#logo-footer {
-    height: auto;
-    width: 150px;
-}
-
-.footer-icon {
-    width: 25px;
-    margin-right: 10px;
-}
-
-.footer-info {
-    color: #F1F1F1;
-}
-
-.footer-li {
-    display: flex;
-    width: 150px;
-    font-size: 20px;
-}
-
-.footer-nav {
-    display: inline-block;
-    color: #F1F1F1;
-    width: 100px;
-}
-#footer-nav-links {
-    color: #f1f1f1;
-    text-decoration: none;
-}
-
-.footer-form input {
-        color: #D9D9D9;
-        background-color: #F1F1F1;
-        border: none;
-        border-radius: 25px;
-        padding-left: 15px;
-        margin: 10px;
-    }
-    
-.footer-form input[type=text], input[type=email] {
-        height: 60px;
-        width: 90%;
-        font-size: 20px;
-    }
-    
-.footer-form input[type=submit] {
-        width: 175px;
-        height: 60px;
-        background-color: #DDFDEE;
-        color: #364F99;
-    } */
 
 .copyright {
     height: 100px;
