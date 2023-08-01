@@ -14,8 +14,8 @@
 </head>
 <body>
     <nav id="nav">
-        <img id="logo" src="./images/logo-holder.png" alt="">
-        <ul class='nav-links'>
+        <img class="logo nav-logo" src="./images/logo-holder.png" alt="">
+        <ul class='nav-bar'>
             <li><a class="hover-underline-animation" href="./index.html">Home</a></li>
             <li><a class="hover-underline-animation" href="./aim_mission.html">Aim & Mission</a></li>
             <li><a class="hover-underline-animation" href="">About</a></li>
@@ -35,13 +35,13 @@
                 research emphasis on disorders of Gut-Brain interactions (DGBIs, Irritable Bowel Syndrome and Functional Dyspepsia), gut motility 
                 disorders (idiopathic and diabetic gastroparesis, slow transit constipation) and related metabolic disease (obesity and diabetes).</p>
         </div>
-        <div class="am-card column-1">
+        <div class="am-card column-2">
             <img src="./images/educate-transparent (1).png" alt="educate">
             <h2>Educate</h2>
             <p>To increase awareness about gut-metabolic health and disease, promote knowledge about Gut-Brain Science what is going on at front bench to 
                 bedside and build a community of Gut-Brain Science lovers through this platform.</p>
         </div>
-        <div class="am-card column-1">
+        <div class="am-card column-3">
             <img src="./images/advance-transparent.png" alt="advance">
             <h2>Advance</h2>
             <p>To share the cutting-edge research and developments in the field of gut-metabolic health and disease, focusing research based on the physiological 
@@ -49,5 +49,47 @@
                 and obesity.</p>
         </div>
     </section>
+    <footer class="footer">
+        <div class="column-footer column-footer-1">
+            <img src="./images/logo-holder.png" alt="" class="logo footer-logo">
+            <ul class="footer-info">
+                <li class="footer-li"><img src="./images/icons8-phone-50.png" alt="" class="footer-icon">7751234567</li>
+                <li class="footer-li"><img src="./images/icons8-email-48.png" alt="" class="footer-icon">email@emailaddress.com</li>
+                <li class="footer-li"><img src="./images/icons8-twitter-50.png" alt="" class="footer-icon"> @GutBrainScience</li>
+            </ul>
+        </div>
+        <div class="column-footer column-footer-2">
+            <h4 class="sitemap title-footer">Sitemap</h4>
+            <h5 class="sub-title-footer">All Our Pages</h5>
+            <div class="footer-nav">
+            <a href="" class="footer-nav-link">Home</a>
+            <a href="" class="footer-nav-link">Aim & Mission</a>
+            <a href="" class="footer-nav-link">Seminars</a>
+            <a href="" class="footer-nav-link">About</a>
+            <a href="" class="footer-nav-link">Contact</a>
+            <a href="" class="footer-nav-link">Join</a> 
+            </div>
+        </div>
+        <div class="column-footer column-footer-3">
+            <h4 class="contact title-footer">Contact Us</h4>
+            <h5 class="sub-title-footer">Send Us a Message</h5>
+            <form action="" class="footer-form">
+                    <input type="text" id="fname" name="fname" value="your name"><br>
+                    <input type="email" id="email" name="email" value="your email"><br>
+                    <div id="captcha" class="captcha"><script>createCaptcha();</script></div>
+                    <div class="restart">
+                    <a href="#" onclick="createCaptcha()">change</a>
+                    </div>
+                    <div class="input">
+                        <input type="text" name="reCaptcha" id="reCaptcha" placeholder="Captcha"/>
+                    </div>
+                    <div id="errCaptcha" class="errmsg"></div>
+                    <input type="submit" value="Submit" onclick="validateCaptcha()">
+            </form>
+        </div>
+    </footer>
+    <div class="copyright">
+            <h4 class="copyright-text">Copyright 2023. All Rights Reserved. Nohely’s Web Consulting</h4>
+    </div>
 </body>
 </html>
