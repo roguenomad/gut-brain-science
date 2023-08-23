@@ -16,16 +16,16 @@
     <nav id="nav">
         <img class="logo nav-logo" src="./images/logo-holder.png" alt="">
         <ul class='nav-bar'>
-            <li><a class="hover-underline-animation" href="./index.html">Home</a></li>
-            <li><a class="hover-underline-animation" href="./aim_mission.html">Aim & Mission</a></li>
-            <li><a class="hover-underline-animation" href="">About</a></li>
-            <li><a class="hover-underline-animation" href="">Contact</a></li>
-            <li><a class="hover-underline-animation" href="">Join</a></li>
+            <li><a class="hover-underline-animation nav-links" href="./index.html">Home</a></li>
+            <li><a class="hover-underline-animation nav-links" href="./aim_mission.html">Aim & Mission</a></li>
+            <li><a class="hover-underline-animation nav-links" href="./about.html">About</a></li>
+            <li><a class="hover-underline-animation nav-links" href="./aim_mission.html#footer">Contact</a></li>
+            <li><a class="hover-underline-animation nav-links" href="./about.html#about-button">Join</a></li>
         </ul>
     </nav>
     <div class="am-hero-image"><img src="" alt="">
         <span class="am-hero-text">Connecting <br> Mind and <br> Bodies for<br><span style="color: #FFE969;"> Better Health.</span></span>
-        <button class="am-hero-button">Join</button>
+        <a href="./about.html#about-button"><button class="am-hero-button">Join</button></a>
     </div>
     <section class="am-card-flex">
         <div class="am-card column-1">
@@ -49,12 +49,12 @@
                 and obesity.</p>
         </div>
     </section>
-    <footer class="footer">
+    <footer id="footer">
         <div class="column-footer column-footer-1">
             <img src="./images/logo-holder.png" alt="" class="logo footer-logo">
             <ul class="footer-info">
-                <li class="footer-li"><img src="./images/icons8-phone-50.png" alt="" class="footer-icon">7751234567</li>
-                <li class="footer-li"><img src="./images/icons8-email-48.png" alt="" class="footer-icon">email@emailaddress.com</li>
+                <!-- <li class="footer-li"><img src="./images/icons8-phone-50.png" alt="" class="footer-icon">7751234567</li>
+                <li class="footer-li"><img src="./images/icons8-email-48.png" alt="" class="footer-icon">email@emailaddress.com</li> -->
                 <li class="footer-li"><img src="./images/icons8-twitter-50.png" alt="" class="footer-icon"> @GutBrainScience</li>
             </ul>
         </div>
@@ -62,28 +62,21 @@
             <h4 class="sitemap title-footer">Sitemap</h4>
             <h5 class="sub-title-footer">All Our Pages</h5>
             <div class="footer-nav">
-            <a href="" class="footer-nav-link">Home</a>
-            <a href="" class="footer-nav-link">Aim & Mission</a>
-            <a href="" class="footer-nav-link">Seminars</a>
-            <a href="" class="footer-nav-link">About</a>
-            <a href="" class="footer-nav-link">Contact</a>
-            <a href="" class="footer-nav-link">Join</a> 
+                <a href="./index.html" class="footer-nav-link">Home</a>
+                <a href="./aim_mission.html" class="footer-nav-link">Aim & Mission</a>
+                <a href="./index.html#cal-box" class="footer-nav-link">Seminars</a>
+                <a href="./about.html" class="footer-nav-link">About</a>
+                <a href="./aim_mission.html#footer" class="footer-nav-link">Contact</a>
+                <a href="./about.html#about-button" class="footer-nav-link">Join</a> 
             </div>
         </div>
         <div class="column-footer column-footer-3">
             <h4 class="contact title-footer">Contact Us</h4>
             <h5 class="sub-title-footer">Send Us a Message</h5>
-            <form action="" class="footer-form">
-                    <input type="text" id="fname" name="fname" value="your name"><br>
-                    <input type="email" id="email" name="email" value="your email"><br>
-                    <div id="captcha" class="captcha"><script>createCaptcha();</script></div>
-                    <div class="restart">
-                    <a href="#" onclick="createCaptcha()">change</a>
-                    </div>
-                    <div class="input">
-                        <input type="text" name="reCaptcha" id="reCaptcha" placeholder="Captcha"/>
-                    </div>
-                    <div id="errCaptcha" class="errmsg"></div>
+            <form action="https://formsubmit.co/ngarciafranco@nevada.unr.edu" method="POST" class="footer-form">
+                    <input type="text" id="fname" name="fname" placeholder="name"><br>
+                    <input type="email" id="email" name="email" placeholder="email"><br>
+                    <input type="textarea" id="message" name="message" placeholder="message"><br>
                     <input type="submit" value="Submit" onclick="validateCaptcha()">
             </form>
         </div>
